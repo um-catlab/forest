@@ -1,0 +1,16 @@
+name: Notify Pages Repository
+
+on:
+  push:
+    branches: [main]  # Or whatever your default branch is
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch event to parent repository
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: um-catlab/um-catlab.github.io
+          event-type: submodule-updated
