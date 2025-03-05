@@ -1,8 +1,11 @@
-\title{Hello, World!}
-\p{Welcome to your first tree! This tree is the root of your forest.}
-\ul{
-  \li{[Build and view your forest for the first time](http://www.jonmsterling.com/jms-007D.xml)}
-  \li{[Overview of the Forester markup language](http://www.jonmsterling.com/jms-007N.xml)}
-  \li{[Creating new trees](http://www.jonmsterling.com/jms-007H.xml)}
-  \li{[Creating your personal biographical tree](http://www.jonmsterling.com/jms-007K.xml)}
+\title{UM CatLab}
+
+\p{
+\xmlns:html{http://www.w3.org/1999/xhtml}
+\<html:img>[src]{\route-asset{assets/yo.png}}[width]{250}[height]{250}{}
 }
+
+\put\transclude/numbered{false}
+
+\transclude{mission}
+\transclude{members}

@@ -1,0 +1,15 @@
+\title{Members}
+
+\let\rel/member{}
+\execute\datalog{
+  \rel/member ?X -: {\rel/has-tag ?X '{phdstudent}}
+}
+\execute\datalog{
+  \rel/member ?X -: {\rel/has-tag ?X '{advisor}}
+}
+
+\query\datalog{
+  ?X -:
+    {\rel/member ?X}
+    {\rel/has-taxon ?X '{person}}
+}
