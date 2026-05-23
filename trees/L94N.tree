@@ -1,0 +1,11 @@
+\date{2026-05-21T20:49:59Z}
+\author{maxsnew}
+\title{Finitary Algebraic Theory}
+
+\p{A finitary signature is a collection #{\Sigma} of operation symbols with assigned \em{arities} which are natural numbers}
+
+\p{Given a signature, we can form the type of trees #{\Sigma^*X}. A finitary algebraic theory is a signature with a collection of axioms, which are pairs of trees #{\Sigma^*X} for finite #{X}.}
+
+\p{An \em{algebra} of a theory #{\mathcal{A} = (\Sigma, E)} consists of a carrier #{A}, for each operation #{\sigma(n)} an operation #{\sigma : A^n \to A} such that the induced equations from #{E} are all satisfied. A homomorphism of algebras is a function that commutes with all of the operations. These form into a category #{(\mathcal{A}-)\textrm{Alg}} with a forgetful functor #{U : \textrm{Alg} \to \textrm{Set}}}
+
+\p{A \em{free algebra} for a set #{X} is a left adjoint to #{U} at #{X}. Free algebras always exist: they can be constructed as a quotient of #{\Sigma^*X}, but it is useful when possible to come up with an equivalent description of free algebras as "normal forms" of these quotiented trees.}

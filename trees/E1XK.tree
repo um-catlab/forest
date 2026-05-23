@@ -1,0 +1,19 @@
+\date{2026-05-21T20:54:51Z}
+\title{Algebraic Theory of Global Mutable Finite State}
+\author{maxsnew}
+
+\def\l[arg]{}
+\def\u[s]{u{[\s]}}
+\p{The [algebraic theory](L94N) of global mutable finite state for a finite set #{S} has operations}
+
+\p{\ol{\li{#{l(S)}, short for "lookup"} \li{For each #{s : S}, #{\u{s}(1)} short for "update"}}}
+
+\p{subject to the equations}
+
+\p{\ol{\li{#{l(\lambda s. \u{s}(x)) = x}} \li{#{\u{s}(\u{s'}(x)) = \u{s'}(x)}} \li{#{\u{s}(l(t)) = \u{s}(t(s))}}}}
+
+\p{Intuitively the lookup operation branches on the value of the state, picking the appopriate argument as continuation and update sets the value of the state and then proceeds with the continuation.}
+
+\p{The equations say that (1) updating the state to what you just read does nothing (2) updating overwrites a preceding update and (3) lookup executes the continuation corresponding to the most recent update.}
+
+\p{The [free state algebra](L94N) on a set #{X} can be constructed explicitly as the stateful functions #{(S \times X)^S} and the state monad is the corresponding free algebra monad.}

@@ -1,0 +1,11 @@
+\date{2026-05-23T18:35:16Z}
+\title{Delay Monad on Set}
+\author{maxsnew}
+
+\p{The Delay monad on Sets is given by the final coalgebra #{D X = X \uplus D X}. This is monad used as a simple model of programs that may diverge where the number of "steps" is observable.}
+
+\p{An explicit construction of the Delay monad can be given by ##{D X = \{f : \mathbb{N} \rightharpoonup X \uplus 1 | f(n) = \textrm{inl}(x) \Rightarrow f(n+1) = \textrm{inl}(x) } in other words, monotone functions from the natural numbers to the maybe monad on #{X} where the maybe monad is given the ordering that adjoins a bottom element to a discrete order.}
+
+\p{The delay monad can be given an inductive characterization as the free [fixed point algebra](MYZG) if and only if Markov's principle holds. Without Markov's principle, #{DX} can be given the structure of a fixed point algebra but we cannot prove it is free.}
+
+\p{In fact, the delay monad is finitary (and thus the free algebras for an [algebraic theory](L94N)) if and only if Markov's principle holds. Therefore if the delay monad is finitary then it is the free fixed point algebra.}

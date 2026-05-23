@@ -1,0 +1,16 @@
+\date{2026-05-22T16:46:50Z}
+\title{Algebraic Theory of an endofunction with a fixed point}
+\author{maxsnew}
+
+\p{The algebraic theory of an endofunction with a fixed point consists of two operations}
+
+\ol{
+\li{#{\delta(1)}}
+\li{#{\Omega(0)}}
+}
+
+\p{satisfying one equation #{\delta(\Omega) = \Omega}.}
+
+\p{A computational intuition is that #{\delta(x)} is an internal computation step and that #{\Omega} is a diverging computation.}
+
+\p{The free algebra on #{X} can be explicitly described as having underlying set #{(\mathbb{N}\times X) \uplus \{\Omega\}}, i.e. an intensional computation either terminates with a result after some finite number of steps, or it diverges.}
