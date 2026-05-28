@@ -1,0 +1,11 @@
+\date{2026-05-26T13:52:33Z}
+\author{maxsnew}
+\title{Markov's Principle}
+
+\p{Markov's Principle is a weak choice principle, weaker than the law of excluded middle.
+It can be formulated in many equivalent ways:
+\ol{
+\li{Any sequence of booleans #{\mathbb{N} \to \mathbb{B}} that is not always 0 must contain a 1.}
+\li{The [extended natural numbers](VWNF) are equivalent to the natural numbers with a point adjoined. More precisely, the inclusion #{\mathbb{N}\uplus\{\Omega\} \to \mathbb{N}_\infty} is surjective (and thus a bijection).}
+}
+}
