@@ -5,3 +5,9 @@
 \meta{position}{Assistant Professor}
 \meta{orcid}{0000-0001-8141-195X}
 \meta{institution}{University of Michigan}
+
+\p{Posts} % Should this actually be its own tree?
+\query\datalog{
+  ?X -:
+    {\rel/has-author ?X @{maxsnew}}
+}
